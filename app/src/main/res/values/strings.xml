@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Контакты</string>
+    <string name="et_name">Введите имя контакта</string>
+    <string name="et_phone_number">Введите номер телефона</string>
+    <string name="btn_submit">Сохранить</string>
+    <string name="menu_exit">Exit</string>
+</resources>
