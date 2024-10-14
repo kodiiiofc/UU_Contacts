@@ -66,4 +66,6 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.coroutines")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutines")
+    //CardView
+    implementation("androidx.cardview:cardview:1.0.0")
 }

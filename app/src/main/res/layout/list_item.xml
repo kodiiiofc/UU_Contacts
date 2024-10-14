@@ -3,39 +3,43 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background=""
     android:layout_margin="4dp"
     app:cardCornerRadius="4dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="4dp"
+        android:padding="8dp"
         android:background="@color/white">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:id="@+id/iv_delete"
             android:contentDescription="@string/iv_delete"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/tv_phone_number"
             android:src="@drawable/ic_list_delete"/>
 
         <TextView
+            android:id="@+id/tv_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/tv_name"
-            android:text="Имя контакта"
-            app:layout_constraintTop_toTopOf="parent"
             android:layout_marginEnd="4dp"
+            android:text="Имя контакта"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            app:layout_constraintEnd_toStartOf="@id/iv_delete"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/iv_delete"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/tv_phone_numbers"
+            android:id="@+id/tv_phone_number"
+            android:text="Номер телефона"
+            android:textAppearance="?android:attr/textAppearanceMedium"
             app:layout_constraintTop_toBottomOf="@id/tv_name"
             android:layout_marginEnd="4dp"
             android:layout_marginTop="4dp"
@@ -46,11 +50,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tv_timestamp"
-            app:layout_constraintTop_toBottomOf="@id/tv_phone_numbers"
+            app:layout_constraintTop_toBottomOf="@id/tv_phone_number"
             android:layout_marginEnd="4dp"
             android:layout_marginTop="4dp"
             app:layout_constraintEnd_toEndOf="parent"
             android:text="время создания"
+            android:textAppearance="?android:attr/textAppearanceSmall"
             android:gravity="end"/>
 
         <ImageView

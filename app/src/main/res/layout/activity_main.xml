@@ -47,10 +47,14 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:id="@+id/tv_output"
+        android:id="@+id/rv_contacts"
         app:layout_constraintTop_toBottomOf="@id/btn_submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:padding="20dp"/>
+        android:padding="8dp"
+        tools:listitem="@layout/list_item"
+        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+        android:orientation="vertical"
+        app:spanCount="2"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

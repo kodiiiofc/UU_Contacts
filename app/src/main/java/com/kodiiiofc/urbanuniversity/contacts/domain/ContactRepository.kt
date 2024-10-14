@@ -1,6 +1,11 @@
 package com.kodiiiofc.urbanuniversity.contacts.domain
 
+import androidx.lifecycle.LiveData
+
 interface ContactRepository {
-    suspend fun addContact(contact: Contact)
-    suspend fun loadDatabaseAsList() : List<Contact>
+
+    val contacts: LiveData<List<Contact>>
+
+    suspend fun insert(contact: Contact)
+    suspend fun delete(contact: Contact)
 }

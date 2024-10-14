@@ -7,7 +7,8 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "contacts_table")
 data class Contact(
     @ColumnInfo("name") val name: String,
-    @ColumnInfo("phone_number") var phoneNumber: String = "empty") {
+    @ColumnInfo("phone_number") var phoneNumber: String,
+    @ColumnInfo("timestamp") var timestamp: String) {
 
     @PrimaryKey(autoGenerate = true)
     var id: Int = 0
