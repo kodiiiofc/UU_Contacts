@@ -4,4 +4,6 @@
     <string name="et_phone_number">Введите номер телефона</string>
     <string name="btn_submit">Сохранить</string>
     <string name="menu_exit">Exit</string>
+    <string name="iv_delete">Удалить контакт</string>
+    <string name="iv_timestamp">Время создания</string>
 </resources>
